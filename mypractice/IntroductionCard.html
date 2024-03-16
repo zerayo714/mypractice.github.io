@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>介紹卡片</title>
+    <style type="text/css">
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            background-color: #faa;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .wrap {
+            width: 1200px;
+            display: flex;
+            margin: auto;
+
+        }
+
+        .item {
+            background-color: #fff;
+            width: 368px;
+            margin: 15px;
+            text-align: center;
+            border: 1px solid #000;
+            transform: translateY(0px);
+            transition: .5s;
+        }
+
+        .item img {
+            width: 100%;
+            vertical-align: middle;
+        }
+
+        .item h2 {
+            border-bottom: 1px solid #000;
+            padding-bottom: .3em;
+            margin-bottom: .4em;
+            font-weight: 900;
+            transition: .25s;
+        }
+
+        .item p {
+            line-height: 1.5;
+            font-weight: 510;
+            transition: .2s;
+        }
+
+        .item .txt {
+            padding: 20px;
+            position: relative;
+        }
+
+        .item:hover {
+            transform: translateY(-50px);
+        }
+
+        .item .txt::before {
+            content: '';
+            width: 0;
+            position: absolute;
+            height: 0x;
+            right: 0;
+            top: 0;
+            border-top: 50px solid transparent;
+            border-right: 184px solid #FFF;
+            border-left: 184px solid #FFF;
+            transform: translateY(-98%);
+        }
+
+        .item:hover .txt::before {
+            border-left: 184px solid #FE885D;
+            border-right: 184px solid #FE885D;
+        }
+
+        .item:hover {
+            background-image: linear-gradient(#FE885D 60%, #faa);
+        }
+
+        .item:hover .txt {
+            color: #fff;
+        }
+
+        .item:hover h2 {
+            color: #fff;
+            border-bottom-color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="item">
+            <img src="https://picsum.photos/300/300?random=10">
+            <div class="txt">
+                <h2>標題一</h2>
+                <p>這是我覺得最酷的作品之一，.item
+                    .txt::before真的是要搞死我，要不是他酷酷的，而且整體tramsform的效果很好。更多資訊請洽我的信箱:mangoray123@gmail.com。周二固定公休。</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://picsum.photos/300/300?random=20">
+            <div class="txt">
+                <h2>標題二</h2>
+                <p>這是我覺得最酷的作品之一，.item
+                    .txt::before真的是要搞死我，要不是他酷酷的，而且整體tramsform的效果很好。更多資訊請洽我的信箱:mangoray123@gmail.com。周二固定公休。</p>
+            </div>
+        </div>
+        <div class="item">
+            <img src="https://picsum.photos/300/300?random=30">
+            <div class="txt">
+                <h2>標題三</h2>
+                <p>這是我覺得最酷的作品之一，.item
+                    .txt::before真的是要搞死我，要不是他酷酷的，而且整體tramsform的效果很好。更多資訊請洽我的信箱:mangoray123@gmail.com。周二固定公休。</p>
+            </div>
+
+        </div>
+
+    </div>
+    <form action="Main.html">
+        <input type="submit" value="頁尾"
+            style="display: flex; margin: auto; padding: 15px 20px;position: relative;right: 30px; font-size: 150%;">
+    </form>
+</body>
+
+</html>

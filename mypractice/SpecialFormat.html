@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>破格式設計</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/80d5159630.css">
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        html,
+        body {
+            height: 100vh;
+        }
+
+        body {
+            background: linear-gradient(-45deg, #FFF, #f5afac);
+        }
+
+        .wrap {
+            display: flex;
+            width: 1200px;
+            margin: auto;
+            padding-top: 75px;
+        }
+
+        .item {
+            width: 370px;
+            margin: 0 15px;
+            text-align: center;
+            border: 10px solid #f9cec2;
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 10px 20px 50px #be8885;
+            /*左右 上下 透明度*/
+        }
+
+        .item .text {
+            padding: 20px;
+        }
+
+        .item .icon {
+            width: 150px;
+            height: 150px;
+            background-color: #fff;
+            margin: -75px auto 0;
+            font-size: 65px;
+            line-height: 150px;
+            border-radius: 50%;
+            color: #f9cec2;
+            position: relative;
+        }
+
+        .item .icon:before {
+            content: '';
+            position: absolute;
+
+            width: 100%;
+            height: 100%;
+            border-top: 10px solid #f9cec2;
+            border-right: 10px solid #f9cec2;
+            border-bottom: 10px solid transparent;
+            border-left: 10px solid transparent;
+            left: -10px;
+            top: -10px;
+            border-radius: 100%;
+            transform: rotate(-45deg);
+        }
+
+        .item:hover .fa {
+            animation: ss .15s linear infinite alternate;
+            /*不快到慢 重複 頭到尾尾到頭*/
+        }
+
+        .item h2 {
+            color: #f5afac;
+            padding-bottom: 20px;
+        }
+
+        .item p {
+            color: rgb(179, 178, 178);
+            font-size: 120%;
+        }
+
+        @keyframes ss {
+            0% {
+                transform: rotate(-10deg);
+            }
+
+            100% {
+                transform: rotate(10deg);
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="g">
+        <div class="wrap">
+            <div class="item">
+                <div class="icon"><i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+                </div>
+                <div class="text">
+                    <h2>標題一</h2>
+                    <p>網路教學說其實切版沒這麼難，可是我怎麼覺得很點難。雖然做完滿有成就感，但要我在手刻一次的話就算了。我會直接copy這裡的contents。更多資訊:mangoray123@gmail.com
+                    </p>
+                </div>
+
+            </div>
+            <div class="item">
+                <div class="icon"><i class="fa fa-envelope-open" aria-hidden="true"></i>
+                </div>
+                <div class="text">
+                    <h2>標題二</h2>
+                    <p>網路教學說其實切版沒這麼難，可是我怎麼覺得很點難。雖然做完滿有成就感，但要我在手刻一次的話就算了。我會直接copy這裡的contents。更多資訊:mangoray123@gmail.com
+                    </p>
+                </div>
+
+            </div>
+            <div class="item">
+                <div class="icon"><i class="fa fa-user-circle" aria-hidden="true"></i>
+                </div>
+                <div class="text">
+                    <h2>標題三</h2>
+                    <p>網路教學說其實切版沒這麼難，可是我怎麼覺得很點難。雖然做完滿有成就感，但要我在手刻一次的話就算了。我會直接copy這裡的contents。更多資訊:mangoray123@gmail.com
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <form action="HorizontalLayout.html">
+            <input type="submit" value="通用橫式版面"
+                style="  padding: 15px 20px;font-size: 150%;display:flex; margin: 50px auto;">
+        </form>
+    </div>
+
+
+</body>
+
+</html>

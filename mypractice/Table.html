@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>表格</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        html,
+        body {
+            height: 100%;
+
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            background: linear-gradient(45deg, #faa, #aaf)
+        }
+
+        .table {
+            margin: auto;
+
+        }
+
+        .table caption {
+            caption-side: bottom;
+            text-align: right;
+            font-size: 80%;
+        }
+
+        .table table {
+            border: 1px double #666;
+            border-radius: 5px;
+            background-color: #fff;
+        }
+
+        .table tbody tr:nth-child(even) {
+            background-color: #ffa;
+        }
+
+        .table th {
+            border: 1px solid #666;
+            padding: 6px 10px;
+            background-color: black;
+            color: #fff;
+        }
+
+        .table th:first-child {
+            border-radius: 5px 0 0 0;
+        }
+
+        .table th:last-child {
+            border-radius: 0 5px 0 0;
+        }
+
+        .table tfoot td:first-child {
+            border-radius: 0 0 0 5px;
+        }
+
+        .table tfoot td:last-child {
+            border-radius: 0 0 5px 0;
+        }
+
+        .table table tr:nth-child(odd):hover {
+            background-color: #fee;
+        }
+
+        .table td {
+            border: 1px solid #666;
+            padding: 6px 10px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="table">
+        <div class="g">
+            <table>
+                <caption>Zeray&copy;2021 網頁切版練習</caption>
+                <thead>
+                    <tr>
+                        <th>敬請期待</th>
+                        <th>敬請期待</th>
+                        <th>敬請期待</th>
+                        <th>敬請期待</th>
+                        <th>敬請期待</th>
+                        <th>敬請期待</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>敬請期待</td>
+                        <td>敬請期待</td>
+                        <td>敬請期待</td>
+                        <td>敬請期待</td>
+                        <td>敬請期待</td>
+                        <td>敬請期待</td>
+                    </tr>
+                    <tr>
+                        <td>敬請期待</td>
+                        <td>敬請期待</td>
+                        <td>敬請期待</td>
+                        <td>敬請期待</td>
+                        <td>敬請期待</td>
+                        <td>敬請期待</td>
+                    </tr>
+                    <tr>
+                        <td>敬請期待</td>
+                        <td>敬請期待</td>
+                        <td>敬請期待</td>
+                        <td>敬請期待</td>
+                        <td>敬請期待</td>
+                        <td>敬請期待</td>
+                    </tr>
+                    <tr>
+                        <td>敬請期待</td>
+                        <td>敬請期待</td>
+                        <td>敬請期待</td>
+                        <td>敬請期待</td>
+                        <td>敬請期待</td>
+                        <td>敬請期待</td>
+                    </tr>
+                    <tr>
+                        <td>敬請期待</td>
+                        <td>敬請期待</td>
+                        <td>敬請期待</td>
+                        <td>敬請期待</td>
+                        <td>敬請期待</td>
+                        <td>敬請期待</td>
+                    </tr>
+                    <tr>
+                        <td>敬請期待</td>
+                        <td>敬請期待</td>
+                        <td>敬請期待</td>
+                        <td>敬請期待</td>
+                        <td>敬請期待</td>
+                        <td>敬請期待</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>敬請期待</td>
+                        <td>敬請期待</td>
+                        <td>敬請期待</td>
+                        <td>敬請期待</td>
+                        <td>敬請期待</td>
+                        <td>敬請期待</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <form action="Main.html">
+            <input type="submit" value="頁尾" style="padding: 15px 20px;font-size: 150%; display:flex; margin:auto">
+        </form>
+    </div>
+</body>
+
+</html>

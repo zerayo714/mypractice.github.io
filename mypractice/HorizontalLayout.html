@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>通用橫式版面</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .wrap {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        background: linear-gradient(-30deg, #fdaecb, #e7597f, #fe8556);
+    }
+
+    .container {
+        width: 1200px;
+        margin: auto;
+        display: flex;
+        flex-shrink: 1;
+        flex-wrap: wrap;
+    }
+
+    .item .pic img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .item {
+        width: 568px;
+        margin: 0 15px;
+        display: flex;
+        border: 1px solid #000;
+        box-shadow: 0 10px 30px rgba(160, 0, 0, .5);
+
+    }
+
+    .item .pic {
+        width: 30%;
+    }
+
+    .item .txt h2 {
+        border-bottom: 1px solid #000;
+    }
+
+    .item .txt p {
+        padding-top: 10px;
+    }
+
+    .item .txt .btn {
+        line-height: 1.5em;
+        border: 1px solid rgb(100, 98, 98);
+        text-decoration: none;
+        border-radius: 50px;
+        text-align: center;
+        align-self: flex-end;
+        padding: 0 5px;
+        margin-top: auto;
+        transition: .2s;
+        position: relative;
+        transform: translateY(10px);
+    }
+
+    .item .txt {
+        width: 70%;
+        padding-left: 20px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, .7);
+    }
+
+    .item .txt .btn:hover {
+        background-color: #aaa;
+        color: #FFF;
+    }
+</style>
+
+<body>
+    <div class="wrap">
+        <div class="container">
+            <!------------------->
+            <div class="item">
+                <div class="pic">
+                    <img src="https://picsum.photos/300/300?random=10">
+                </div>
+                <div class="txt">
+                    <h2>標題一</h2>
+                    <p>這是超酷的通用橫式版面，更多酷酷的通用版面請洽mangoray123@gmail.com</p>
+                    <a href="LayoutCutting.html" class="btn">交錯版面</a>
+                </div>
+            </div>
+            <!------------------->
+            <div class="item">
+                <div class="pic">
+                    <img src="https://picsum.photos/300/300?random=30">
+                </div>
+                <div class="txt">
+                    <h2>標題二</h2>
+                    <p>這是超酷的通用橫式版面，更多酷酷的通用版面請洽mangoray123@gmail.com</p>
+                    <a href="IntroductionCard.html" class="btn">介紹卡片</a>
+                </div>
+            </div>
+            <!------------------->
+            <!-- <div class="item">
+                <div class="pic">
+                    <img src="https://picsum.photos/300/300?random=20">
+                </div>
+                <div class="txt">
+                    <h2>標題三</h2>
+                    <p>給各位的內容是個人員介紹卡的網頁設計入門啦
+                        今天要給各位的內容是，製作一個人員介</p>
+                    <a href="#" class="btn">點此連結</a>
+                </div>
+            </div> -->
+        </div>
+    </div>
+</body>
+
+</html>

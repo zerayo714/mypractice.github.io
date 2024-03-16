@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/80d5159630.css">
+    <meta charset="UTF-8">
+    <title>頁尾</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    body {
+        background-color: #000;
+    }
+
+    .main-footer {
+        padding: 80px 0 0;
+        background: linear-gradient(0deg, rgb(28, 30, 138), rgb(147, 146, 187));
+    }
+
+    .footer-item {
+        flex-grow: 1;
+        width: 0;
+        margin: 0 20px;
+    }
+
+    .copyright {
+        text-align: center;
+        margin: 50px 0 0 0;
+        background-color: #aaf;
+        color: rgb(15, 15, 102);
+    }
+
+    .footer-item h4 {
+        font-size: 24px;
+        font-weight: 700;
+        border-bottom: #FFF 1px solid;
+        padding-bottom: .5em;
+        /*24*.5em=12px */
+        margin-bottom: .5em;
+        color: #FFF;
+    }
+
+
+    .footer-item nav a {
+        line-height: 1.4;
+        text-decoration: none;
+        color: #FFF;
+        padding: 5px 0;
+        font-weight: 100;
+        transition: .3s;
+    }
+
+    .footer-item nav a:hover {
+        color: #aaa;
+    }
+
+    .footer-item nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-footer .container {
+        margin: auto;
+        width: 1200px;
+        display: flex;
+
+    }
+
+    .footer-subs input[type="text"] {
+        width: 0;
+        flex-grow: 1;
+    }
+
+    .footer-subs form {
+        display: flex;
+        margin: auto 0;
+    }
+
+    .footer-subs input[type="submit"] {
+        color: #fff;
+        background-color: #3e5293;
+        cursor: pointer;
+        transition: .2s;
+    }
+
+    .footer-subs input[type="submit"]:hover {
+        color: #aab5d8;
+        background-color: rgb(15, 15, 15);
+    }
+
+    .footer-subs input[type="text"],
+    .footer-subs input[type="submit"] {
+        border: none;
+        padding: 5px 15px;
+    }
+
+    .footer-subs {
+        display: flex;
+        flex-direction: column;
+    }
+</style>
+
+<body>
+    <div class="main-footer">
+        <div class="container">
+            <div class="footer-item">
+                <h4>關於我們</h4>
+                <nav>
+                    <a href="HorizontalLayout.html"><i class="fa fa-angle-right" aria-hidden="true">&nbsp;</i>通用橫式版面</a>
+                    <a href="IntroductionCard.html"><i class="fa fa-angle-right" aria-hidden="true">&nbsp;</i>介紹卡片</a>
+                    <a href="LayoutCutting.html"><i class="fa fa-angle-right" aria-hidden="true">&nbsp;</i>交錯版面</a>
+                    <a href="SpecialFormat.html"><i class="fa fa-angle-right" aria-hidden="true">&nbsp;</i>破格式設計</a>
+                </nav>
+            </div>
+            <div class="footer-item">
+                <h4>服務項目</h4>
+                <nav>
+                    <a href="CrispySquare.html"><i class="fa fa-angle-right" aria-hidden="true">&nbsp;</i>方塊酥版面</a>
+                    <a href="Table.html"><i class="fa fa-angle-right" aria-hidden="true">&nbsp;</i>表格</a>
+                    <a href="SideBar.html"><i class="fa fa-angle-right" aria-hidden="true">&nbsp;</i>側選單</a>
+                    <a href=""><i class="fa fa-angle-right" aria-hidden="true">&nbsp;</i>選項連結</a>
+                </nav>
+            </div>
+            <div class="footer-item">
+                <h4>訂閱我們</h4>
+                <nav>
+                    <a href="#"><i class="fa fa-angle-right" aria-hidden="true">&nbsp;</i>選項連結</a>
+                    <a href="#"><i class="fa fa-angle-right" aria-hidden="true">&nbsp;</i>選項連結</a>
+                    <a href="#"><i class="fa fa-angle-right" aria-hidden="true">&nbsp;</i>選項連結</a>
+                    <a href="#"><i class="fa fa-angle-right" aria-hidden="true">&nbsp;</i>選項連結</a>
+                </nav>
+            </div>
+            <div class="footer-item footer-subs">
+                <h4>贊助廠商</h4>
+                <form action="通用橫式版面.html">
+                    <input type="text">
+                    <input type="submit" value="通用橫式版面">
+                </form>
+            </div>
+        </div>
+        <div class="copyright">
+            Zeray &copy; 2021 網頁切版練習
+        </div>
+    </div>
+
+</body>
+
+</html>

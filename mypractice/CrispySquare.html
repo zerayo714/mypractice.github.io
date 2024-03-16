@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>方塊酥版面</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        body,
+        html {
+            background-color: #000;
+        }
+
+        .wrap {
+            width: 960px;
+            margin: 50px auto 0;
+            overflow: hidden;
+        }
+
+        .item {
+            float: left;
+            position: relative;
+
+        }
+
+
+        .item .txt {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 20px;
+            font-weight: 100;
+            line-height: 1.5;
+            color: transparent;
+            transition: .5s;
+            height: 100%;
+            width: 100%;
+            box-sizing: border-box;
+            /*重要!*/
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            transform: scale(.9);
+        }
+
+        .item:hover .txt {
+            color: #fff;
+            background-color: rgba(0, 0, 0, .5);
+            transform: scale(1);
+        }
+
+        .item h3 {
+            margin-bottom: .4em;
+        }
+
+        .item img {
+            width: 100%;
+            vertical-align: middle;
+        }
+
+        .item:first-child {
+            width: 50%;
+        }
+
+        .item:first-child~.item {
+            width: 25%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="item"><img src="https://picsum.photos/500/500?random=10">
+            <div class="txt">
+                <h3>標題一</h3>
+                <p>大家早，這裡是張哲睿的html+css小天地，還在摸索中所以品質可能不太，更多資訊請洽mangoray123@gmail.com </p>
+            </div>
+        </div>
+        <div class="item"><img src="https://picsum.photos/500/500?random=20">
+            <div class="txt">
+                <h3>標題二</h3>
+                <p>大家早，這裡是張哲睿的html+css小天地，還在摸索中所以品質可能不太優，更多資訊請洽mangoray123@gmail.com</p>
+            </div>
+        </div>
+        <div class="item"><img src="https://picsum.photos/500/500?random=30">
+            <div class="txt">
+                <h3>標題三</h3>
+                <p>大家早，這裡是張哲睿的html+css小天地，還在摸索中所以品質可能不太優，更多資訊請洽mangoray123@gmail.com< /p>
+            </div>
+        </div>
+        <div class="item"><img src="https://picsum.photos/500/500?random=40">
+            <div class="txt">
+                <h3>標題四</h3>
+                <p>大家早，這裡是張哲睿的html+css小天地，還在摸索中所以品質可能不太優，更多資訊請洽mangoray123@gmail.com</p>
+            </div>
+        </div>
+        <div class="item"><img src="https://picsum.photos/500/500?random=50">
+            <div class="txt">
+                <h3>標題五</h3>
+                <p>大家早，這裡是張哲睿的html+css小天地，還在摸索中所以品質可能不太優，更多資訊請洽mangoray123@gmail.com</p>
+            </div>
+        </div>
+    </div>
+    <form action="Main.html">
+        <input type="submit" value="頁尾"
+            style="clear: both;  padding: 15px 20px;font-size: 150%; margin: 100px auto; display: flex;">
+    </form>
+</body>
+
+</html>
